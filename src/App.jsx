@@ -43,6 +43,7 @@ export default function App() {
           value={incrementAmount}
           onChange={(e) => setIncrementAmount(e.target.value)}
         />
+        <h1>Dep trai</h1>
         <button
           className={styles.button}
           onClick={() => dispatch(incrementByAmount(incrementValue))}
