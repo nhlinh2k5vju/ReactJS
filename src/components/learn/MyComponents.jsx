@@ -1,6 +1,11 @@
-  const MyFunction = () => {
+import './style.css'
+
+const MyFunction = () => {
     return (
-      <div>8 H </div>
+      <>
+        <div>Dep trai </div>
+        <div className='child'>co gi sai?</div>
+      </>
     );
   }
 
