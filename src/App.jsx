@@ -17,11 +17,13 @@ export default function App() {
 
   const incrementValue = Number(incrementAmount) || 0;
 
-  const myFunction = () => {
-    console.log("Linhhhuhu")
+  const MyFunction = () => {
+    return (
+      <div>Linh dep trai</div>
+    );
   }
 
-  myFunction();
+  MyFunction();
   return (
     <div>
       <div className={styles.row}>
@@ -68,6 +70,7 @@ export default function App() {
           Add If Odd
         </button>
       </div>
+      <MyFunction/>
     </div>
   );
 }
