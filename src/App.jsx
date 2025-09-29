@@ -9,6 +9,8 @@ import {
   selectCount,
 } from "./redux/counter/counterSlice";
 import styles from './styles/Counter.module.css';
+import MyFunction from './components/learn/MyComponents';
+import {SecondComponent, ThirdComponent } from './components/learn/SecondComponent';
 
 export default function App() {
   const count = useSelector(selectCount);
@@ -16,12 +18,6 @@ export default function App() {
   const [incrementAmount, setIncrementAmount] = useState('2');
 
   const incrementValue = Number(incrementAmount) || 0;
-
-  const MyFunction = () => {
-    return (
-      <div>Linh dep trai</div>
-    );
-  }
 
   MyFunction();
   return (
@@ -70,7 +66,9 @@ export default function App() {
           Add If Odd
         </button>
       </div>
-      <MyFunction/>
+      <MyFunction />
+      <SecondComponent />
+      <ThirdComponent />
     </div>
   );
 }
