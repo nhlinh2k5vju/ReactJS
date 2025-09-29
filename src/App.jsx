@@ -17,6 +17,11 @@ export default function App() {
 
   const incrementValue = Number(incrementAmount) || 0;
 
+  const myFunction = () => {
+    console.log("Linhhhuhu")
+  }
+
+  myFunction();
   return (
     <div>
       <div className={styles.row}>
